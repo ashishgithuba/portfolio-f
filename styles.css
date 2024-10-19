@@ -1,0 +1,154 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    background: #f7c4c4;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Section Styling */
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.gallery-item img {
+    width: 220px;  
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+form input, form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #eed8d8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555555e8;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+#education ul {
+    list-style: none;
+    padding: 0;
+}
+
+#education li {
+    cursor: pointer;
+    padding: 10px;
+    background: #eee;
+    margin: 5px 0;
+}
+
+#education li:hover {
+    background: #ddd;
+}
+
+#education .details {
+    display: none;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+#education li.active .details {
+    display: block;
+}
